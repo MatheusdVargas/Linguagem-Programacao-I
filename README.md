@@ -4,4 +4,7 @@ Este repositório contém os materiais e exemplos de código para a disciplina d
 
 ## Estrutura do Repositório
 
-O repositório está organizado de acordo com os tópicos abordados nas aulas, contendo exemplos práticos, exercícios e conteúdos relevantes para o curso.
+O repositório está organizado de acordo com a progresssão dos tópicos abordados nas aulas, contendo exemplos práticos, exercícios e conteúdos relevantes para o curso.
+
+## Refências
+### Professor: Dário Lissandro Beutler
