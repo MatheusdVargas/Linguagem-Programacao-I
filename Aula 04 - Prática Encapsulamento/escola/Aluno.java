@@ -17,12 +17,12 @@ public class Aluno {
         this.nota2 = nota2;
     }
     // anos de vida
-    public int calcAnos(int anoNasc) {
-        return 2025 - anoNasc;
+    public int calcAnos() {
+        return 2025 - this.anoNasc;
     }
     // meses de vida (idade*12)
-    public int calcMeses(int mesNasc) {
-        return calcAnos(anoNasc) * 12;
+    public int calcMeses() {
+        return calcAnos() * 12;
     }
     // media
     public double calcMedia(double nota1, double nota2) {
@@ -30,15 +30,15 @@ public class Aluno {
     }
     public void escrever() {
         System.out.println(
-        "Código:" + codigo + 
+        "Codigo: " + codigo + 
         "\nNome: " + nome + 
         "\nAno de nascimento: " + anoNasc +
         "\nMes de nascimento: " + mesNasc + 
         "\nNota 1: " + nota1 + 
         "\nNota 2: " + nota2 +
-        "\nAnos de vida: " + calcAnos(anoNasc) + 
-        "\nMeses de vida: " + calcMeses(mesNasc) +
-        "\nMedia: " + calcMedia(nota1, nota2));
+        "\nAnos de vida: " + calcAnos() + 
+        "\nMeses de vida: " + calcMeses() +
+        "\nMedia: " + calcMedia(nota1, nota2) + "\n");
     }
 }
 
