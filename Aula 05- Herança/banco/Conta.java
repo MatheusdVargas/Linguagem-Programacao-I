@@ -3,18 +3,16 @@ public class Conta {
     private int numero;
     private String dono;
     private double saldo;
-    private double limite;
     
     // construtor
     public Conta(int numero, String dono, double saldo, double limite) {
         this.numero = numero;
         this.dono = dono;
         this.saldo = saldo;
-        this.limite = limite;
     }
     
     public void sacar(double valor) {
-        if(valor <= (saldo+limite)) {
+        if(valor <= (saldo)) {
             saldo -= valor;
             System.out.println("Novo saldo (apos saque): " + saldo + "\n");
         } else {
@@ -30,8 +28,7 @@ public class Conta {
     public void escrever() {
         System.out.println("Numero: " + getNumero()+
                 "\n Dono: " + getDono() +
-                "\n Saldo: " + getSaldo() +
-                "\n Limite: " + getLimite());
+                "\n Saldo: " + getSaldo());
     }
     // acessores
     public int getNumero() {
@@ -43,9 +40,6 @@ public class Conta {
     public double getSaldo() {
         return this.saldo;
     }
-    public double getLimite() {
-        return this.limite;
-    }
     
     // mutantes
     public void setNumero(int numero) {
@@ -56,9 +50,6 @@ public class Conta {
     }
     public void setSaldo(double saldo) {
         this.saldo = saldo;
-    }
-    public void setLimite(double limite) {
-        this.limite = limite;
     }
 }
 
